@@ -14,7 +14,7 @@ app.get('/', function (req, res) {
   const html = `<h1>${person.name}</h1>
   <p>${person.job}</p>
   <p>Favourite pokemon? <span>${person.fav_pokemon}</span></p>
-  <img src=${person.pokemon_img}/>`;
+  <img src=${person.pokemon_img} >`;
   res.send(html);
 });
 
