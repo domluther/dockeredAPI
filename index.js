@@ -7,9 +7,15 @@ app.get('/', function (req, res) {
     name: 'JK new',
     age: 38,
     job: 'superstar',
-    fav_pokemon: 'charmander',
+    fav_pokemon: 'Bulbasaur',
+    pokemon_img:
+      'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/1.png',
   };
-  res.send(person);
+  const html = `<h1>${person.name}</h1>
+  <p>${person.job}</p>
+  <p>Favourite pokemon? <span>${person.fav_pokemon}</span></p>
+  <img src=${person.pokemon_img}`;
+  res.send(html);
 });
 
 app.listen(PORT);
