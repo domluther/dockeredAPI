@@ -7,7 +7,7 @@ app.get('/', function (req, res) {
     name: 'JK new',
     age: 38,
     job: 'superstar',
-    fav_pokemon: 'pikapika',
+    fav_pokemon: 'charmander',
   };
   res.send(person);
 });
