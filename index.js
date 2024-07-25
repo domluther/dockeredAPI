@@ -4,7 +4,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 app.get('/', function (req, res) {
   const person = {
-    name: 'JK new',
+    name: 'Mr Keating',
     age: 38,
     job: 'superstar',
     fav_pokemon: 'Bulbasaur',
@@ -14,7 +14,7 @@ app.get('/', function (req, res) {
   const html = `<h1>${person.name}</h1>
   <p>${person.job}</p>
   <p>Favourite pokemon? <span>${person.fav_pokemon}</span></p>
-  <img src=${person.pokemon_img}`;
+  <img src=${person.pokemon_img}/>`;
   res.send(html);
 });
 
